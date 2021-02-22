@@ -1,7 +1,9 @@
 import React from "react";
-import { Button, Col, Row } from "reactstrap";
+import { useHistory } from "react-router";
+import { Button, Col } from "reactstrap";
 
 const Acceuil = () => {
+  const history = useHistory();
   return (
     <Col sm="12" md={{ size: 6, offset: 3 }}>
       <h3>
@@ -13,9 +15,12 @@ const Acceuil = () => {
         utilisateur
       </p>
       <p>Merci</p>
-      <Button>Commencer</Button>
+      <Button color="primary" onClick={() => history.push("/users")}>
+        Commencer
+      </Button>
     </Col>
   );
 };
 
+Acceuil.defaultProps = {};
 export default Acceuil;

@@ -1,0 +1,35 @@
+.card {
+  max-width: 300px;
+  margin: 15px 20px;
+  text-align: center;
+}
+
+.cardImage {
+  border-radius: 50px;
+  object-fit: contain;
+  max-height: 90px;
+  margin-bottom: 20px;
+  height: 100%;
+}
+.externalLink {
+  text-decoration: underline;
+  color: var(--blue);
+}
+.linkDetails {
+  border: 0.5px solid #000000;
+  display: inline-block;
+  padding: 8px 20px;
+  transition: 0.3s;
+  background-color: var(--yellow);
+}
+
+.linkDetails:hover {
+  color: var(--dark);
+  opacity: 0.9;
+
+  transform: translateY(-5px);
+}
+.cardSubtitle {
+  font-weight: 700;
+  font-size: 1.2em;
+}

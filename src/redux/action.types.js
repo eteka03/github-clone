@@ -1,0 +1,3 @@
+export const SET_LOADING = "SET_LOADING";
+export const SET_USERS = "SET_USERS";
+export const GET_USERS_REQUESTED = "GET_USERS_REQUESTED";
