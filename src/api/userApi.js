@@ -13,3 +13,14 @@ export const getAllUsers = async () => {
     return error;
   }
 };
+
+export const getUserByLogin = async (login) => {
+  try {
+    const { data } = await rootApi.get(`users/${login}`);
+
+    return data;
+  } catch (error) {
+    console.error(error);
+    return error;
+  }
+};

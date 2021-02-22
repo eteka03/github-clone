@@ -1,0 +1,4 @@
+.avatarImage {
+  object-fit: contain;
+  max-height: 160px;
+}
