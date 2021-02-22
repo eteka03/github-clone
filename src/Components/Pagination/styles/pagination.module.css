@@ -1,0 +1,31 @@
+.container {
+  width: 80%;
+  height: 40px;
+  margin: 20px 0px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+.container a {
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  border: 1px solid var(--blue);
+  color: var(--indigo);
+}
+.container a:hover {
+  background-color: var(--blue);
+  color: var(--light);
+}
+.previous {
+}
+.next {
+}
+.disabled {
+}
+.active {
+}
+.active a {
+  background-color: var(--blue);
+  color: var(--light);
+}

@@ -5,7 +5,7 @@ import Avatar from "../Components/Avatar/Avatar";
 import Error from "../Components/Error/Error";
 import Loading from "../Components/Loading/Loading";
 import { GET_USER_REQUESTED } from "../redux/action.types";
-
+import PropTypes from "prop-types";
 const User = ({ match, getUser, user }) => {
   //recuperation du login dans la barre de recherche à travers la propriété match du router
   const { login } = match.params;
@@ -62,4 +62,10 @@ const mapStateToProps = (state) => ({
 const mapDispatchToprops = (dispatch) => ({
   getUser: (login) => dispatch({ type: GET_USER_REQUESTED, payload: login }),
 });
+
+User.propTypes = {
+  user: PropTypes.object,
+  getUser: PropTypes.func,
+};
+
 export default connect(mapStateToProps, mapDispatchToprops)(User);
