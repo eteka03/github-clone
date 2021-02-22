@@ -1,0 +1,11 @@
+.navbar {
+  background-color: transparent;
+}
+.brand {
+  font-weight: 900;
+}
+.brand:hover {
+  color: var(--dark);
+  transition: 0.4s;
+  transform: scale(1.1);
+}

@@ -1,0 +1,5 @@
+.header {
+  max-height: 130px;
+  height: auto;
+  background-color: var(--yellow);
+}
